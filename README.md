@@ -61,7 +61,6 @@ It’s ideal for:
 
  ### System Flow Diagram
 
-    ```python
                 ┌────────────┐
                 │  input/    │
                 │  events    │
