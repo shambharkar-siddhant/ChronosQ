@@ -1,0 +1,6 @@
+start broker - 
+python -m broker.cli run --config sample_config.yaml --log-file chronosq.log
+
+start worker - 
+python examples/dummy_worker.py --config sample_config.yaml --worker-id user_1 --log-file worker_user1.log
+

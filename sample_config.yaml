@@ -1,0 +1,13 @@
+input_dir: "./input"
+jobs_dir: "./jobs"
+broker_root: "./broker_runtime"
+
+workers:
+  - id: "user_1"
+    types: ["quality_check", "policy"]
+  - id: "user_2"
+    types: ["quality_check"]
+
+settings:
+  recovery_timeout_seconds: 60
+  max_attempts: 3
