@@ -36,17 +36,9 @@ It’s ideal for:
 
 	`broker/types/<task_type>/<worker_id>/<job_id>.json`
     
-
+*   **Atomic State Transitions:** Job lifecycle represented by file states:
 	```python
     pending → assigned → processing → success / failure / hold
-
-*   **Crash-Safe Recovery Engine:** Detects stuck .processing jobs and requeues or fails gracefully.
-    
-*   **At-Least-Once Delivery Guarantee:** Job retries with configurable attempt limit.
-    
-*   **Structured JSON Logging:** Every event is machine-parsable and audit-friendly.
-    
-*   **Zero External Dependencies:** Pure Python + filesystem. Runs anywhere.
 
 *   **Crash-Safe Recovery Engine:** Detects stuck .processing jobs and requeues or fails gracefully.
     
